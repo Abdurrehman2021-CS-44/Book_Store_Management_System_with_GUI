@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Contains">
+    <Position X="9.65" Y="2.487" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="Many">
+    <Position X="9.105" Y="3.108" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="One">
+    <Position X="10.226" Y="3.102" Height="0.291" Width="0.7" />
+  </Comment>
+  <Class Name="BookStoreManagementSystem.BL.MUser">
+    <Position X="4.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAABAAAAAAAAgCAQAAAgEAAAA=</HashCode>
+      <FileName>BL\MUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStoreManagementSystem.BL.BookInfo">
+    <Position X="11" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAEAAAABAACAAAAAAIAAAACAQAAABEBAAASA=</HashCode>
+      <FileName>BL\BookInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStoreManagementSystem.BL.NewspaperInfo">
+    <Position X="2.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BL\NewspaperInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStoreManagementSystem.BL.MagazinesInfo">
+    <Position X="6" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAACAA=</HashCode>
+      <FileName>BL\MagazinesInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStoreManagementSystem.BL.General">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAkQAAALAAAAAgAAAAAAAAAAAYAAAAGAAAAQAAAAEA=</HashCode>
+      <FileName>BL\General.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStoreManagementSystem.BL.Customer">
+    <Position X="7.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAEBAAARAQAAEAAAAAAQAAABAAAAAw=</HashCode>
+      <FileName>BL\Customer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="BookInfo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BookStoreManagementSystem.DL.BookInfoDL">
+    <Position X="6.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAACAEAAAAQAABBAAAgAACAAAAAgAAQCAAAEAA=</HashCode>
+      <FileName>DL\BookInfoDL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStoreManagementSystem.DL.CustomerDL">
+    <Position X="10.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAEAABAAEAAAAAAABBAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DL\CustomerDL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStoreManagementSystem.DL.MagazinesInfoDL">
+    <Position X="0.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAEIAAAAEAAAAAAABBAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DL\MagazinesInfoDL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStoreManagementSystem.DL.NewspaperInfoDL">
+    <Position X="2.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAEAAAAAAABBAAAgABAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>DL\NewspaperInfoDL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStoreManagementSystem.DL.MUserDL">
+    <Position X="8.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AICAEAABAAEAAAAAAABBAAAAAAAAAAAAAAAACAEAgAA=</HashCode>
+      <FileName>DL\MUserDL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

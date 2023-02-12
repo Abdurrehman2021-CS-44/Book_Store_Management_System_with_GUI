@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0D453BDA-0621-4E95-8FC3-F0FC741B0E55}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BookStoreManagementSystem</RootNamespace>
+    <AssemblyName>BookStoreManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BL\BookInfo.cs" />
+    <Compile Include="BL\Customer.cs" />
+    <Compile Include="BL\General.cs" />
+    <Compile Include="BL\MagazinesInfo.cs" />
+    <Compile Include="BL\MUser.cs" />
+    <Compile Include="BL\NewspaperInfo.cs" />
+    <Compile Include="BL\Notice.cs" />
+    <Compile Include="DL\BookInfoDL.cs" />
+    <Compile Include="DL\CustomerDL.cs" />
+    <Compile Include="DL\MagazinesInfoDL.cs" />
+    <Compile Include="DL\MUserDL.cs" />
+    <Compile Include="DL\NewspaperInfoDL.cs" />
+    <Compile Include="DL\NoticeDL.cs" />
+    <Compile Include="frmAddMagazine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddMagazine.Designer.cs">
+      <DependentUpon>frmAddMagazine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddNewspaper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddNewspaper.Designer.cs">
+      <DependentUpon>frmAddNewspaper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddNotices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddNotices.Designer.cs">
+      <DependentUpon>frmAddNotices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuyBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuyBook.Designer.cs">
+      <DependentUpon>frmBuyBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditUser.Designer.cs">
+      <DependentUpon>frmEditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSignUp.Designer.cs">
+      <DependentUpon>frmSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminMenu.Designer.cs">
+      <DependentUpon>frmAdminMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserMenu.Designer.cs">
+      <DependentUpon>frmUserMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddBook.Designer.cs">
+      <DependentUpon>frmAddBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditBookInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditBookInfo.Designer.cs">
+      <DependentUpon>frmEditBookInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BL\locations.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ucAddEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAddEmployee.Designer.cs">
+      <DependentUpon>ucAddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucBooks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucBooks.Designer.cs">
+      <DependentUpon>ucBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucBuyProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucBuyProduct.Designer.cs">
+      <DependentUpon>ucBuyProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucMagazines.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucMagazines.Designer.cs">
+      <DependentUpon>ucMagazines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucNewspaper.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucNewspaper.Designer.cs">
+      <DependentUpon>ucNewspaper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucNotices.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucNotices.Designer.cs">
+      <DependentUpon>ucNotices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucOrderedBooks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucOrderedBooks.Designer.cs">
+      <DependentUpon>ucOrderedBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucUsers.Designer.cs">
+      <DependentUpon>ucUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucViewBooks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucViewBooks.Designer.cs">
+      <DependentUpon>ucViewBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucViewMagazines.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucViewMagazines.Designer.cs">
+      <DependentUpon>ucViewMagazines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucViewNewspaper.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucViewNewspaper.Designer.cs">
+      <DependentUpon>ucViewNewspaper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucViewNotices.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucViewNotices.Designer.cs">
+      <DependentUpon>ucViewNotices.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmAddMagazine.resx">
+      <DependentUpon>frmAddMagazine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddNewspaper.resx">
+      <DependentUpon>frmAddNewspaper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddNotices.resx">
+      <DependentUpon>frmAddNotices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuyBook.resx">
+      <DependentUpon>frmBuyBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditUser.resx">
+      <DependentUpon>frmEditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSignUp.resx">
+      <DependentUpon>frmSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminMenu.resx">
+      <DependentUpon>frmAdminMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserMenu.resx">
+      <DependentUpon>frmUserMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddBook.resx">
+      <DependentUpon>frmAddBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditBookInfo.resx">
+      <DependentUpon>frmEditBookInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ucAddEmployee.resx">
+      <DependentUpon>ucAddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucBooks.resx">
+      <DependentUpon>ucBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucBuyProduct.resx">
+      <DependentUpon>ucBuyProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucMagazines.resx">
+      <DependentUpon>ucMagazines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucNewspaper.resx">
+      <DependentUpon>ucNewspaper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucNotices.resx">
+      <DependentUpon>ucNotices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucOrderedBooks.resx">
+      <DependentUpon>ucOrderedBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucUsers.resx">
+      <DependentUpon>ucUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucViewBooks.resx">
+      <DependentUpon>ucViewBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucViewMagazines.resx">
+      <DependentUpon>ucViewMagazines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucViewNewspaper.resx">
+      <DependentUpon>ucViewNewspaper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucViewNotices.resx">
+      <DependentUpon>ucViewNotices.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
